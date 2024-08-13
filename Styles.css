@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #276059;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logout button {
+    color: white;
+    background-color: #00796B;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+header .logout button:focus {
+    outline: none;
+}
+
+header .logout button.clicked {
+    background-color: #0b1614;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #00796B;
+    padding: 70px;
+    color: white;
+    min-width: 100px;
+    height: auto;/* Adjusted height to fit viewport */
+    margin-top:0px; /* Added margin to create whitespace */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sidebar ul li.active, .sidebar ul li a:hover {
+    background-color: #E0F7FA;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+main h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 50px; /* Gap between grid items */
+    justify-items: center;
+     /* Center align grid items */
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
